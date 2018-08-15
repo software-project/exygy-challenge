@@ -1,0 +1,21 @@
+.browse-search {
+  @include flex-grid-row();
+  @include scut-margin(1rem n n n);
+}
+
+.browse-stage {
+  @include flex-grid-row();
+  @include scut-margin(rem-calc(10) n rem-calc(40) n);
+  @include scut-padding(rem-calc(10) n);
+  background-color: $lightest-gray;
+  border: 1px solid $lighter-gray;
+  border-radius: $slat-radius;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+}
+
+.browse-slat-set {
+  @include flex-grid-column();
+  @include breakpoint(medium) {
+    @include scut-padding(n 0.75rem);
+  }
+}
