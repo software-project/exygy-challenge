@@ -1,0 +1,24 @@
+<div class="login-box ">
+	<span class="login-box-symbol">
+    <span class="ui-icon i-darkest-blue i-xxlarge ">
+      <svg>
+        <use xlink:href="#i-profile-large" />
+      </svg>
+    </span> </span>
+
+  <div class="login-box-body">
+    <div class="login-box-header">
+      <h2 class="login-box-title">
+        Sign In
+      </h2>
+    </div>
+
+    <form class="login-box-form" #signinForm="ngForm" (ngSubmit)="onSubmit()">
+      <input class="login-box-form-username" type="text" placeholder="Email" [(ngModel)]="user.email" name="email" required/>
+      <input class="login-box-form-password" type="password" placeholder="Password" [(ngModel)]="user.password" name="password" required/>
+
+      <button class="button login-box-form-submit" data-open="" type="submit">
+        Sign In
+      </button></form>
+  </div>
+</div>

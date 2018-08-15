@@ -387,7 +387,7 @@
           <a href="#" class="nav-bar-avatar">
 	            <span class="avatar-initials ">
 	              <span class="avatar-initials-text">
-	                AK
+	                {{ currentUser?.initials() }}
 	              </span>
 	            </span>          </a>
         </li>
@@ -409,7 +409,7 @@
 
   </div>
 </nav>
-
+<app-notifications></app-notifications>
 <router-outlet></router-outlet>
 
 

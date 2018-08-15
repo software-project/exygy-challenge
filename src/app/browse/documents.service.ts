@@ -4,6 +4,7 @@ import { HttpClient } from '@angular/common/http';
 import { plainToClass } from 'class-transformer';
 import { map } from 'rxjs/internal/operators';
 import { Document } from './document';
+import { environment } from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -21,7 +22,7 @@ export class DocumentsService {
   }
 
   private getUrlFor(path: string): string {
-    return 'http://exygy-challenge-backend.herokuapp.com/' + path;
+    return environment.apiUrl + path;
   }
 
   private getParams(params: Object): Object {

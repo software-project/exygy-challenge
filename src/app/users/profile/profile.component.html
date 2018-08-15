@@ -1,0 +1,23 @@
+<div class="login-box ">
+	<span class="login-box-symbol">
+    <span class="ui-icon i-darkest-blue i-xxlarge ">
+      <span class="avatar-initials ">
+        <span class="avatar-initials-text"> {{ user?.initials() }} </span>
+      </span>
+    </span> </span>
+
+  <div class="login-box-body">
+    <div class="login-box-header">
+      <h2 class="login-box-title">
+        {{ user?.fullName() }}
+      </h2>
+    </div>
+
+    <div class="login-box-email">
+      {{ user?.email }}
+    </div>
+    <div class="login-box-footer">
+      <button>EDIT</button>
+    </div>
+  </div>
+</div>

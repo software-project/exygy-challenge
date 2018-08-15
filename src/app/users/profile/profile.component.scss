@@ -1,0 +1,32 @@
+.avatar-initials{
+    width: 52px;
+    height: 52px;
+}
+
+.avatar-initials-text{
+    font-size: 24px;
+}
+
+.login-box-email {
+    color: #9b9b9b;
+    font-size: 12px;
+    padding: 5px;
+}
+
+.login-box-body {
+    height: 248px;
+    position:relative;
+}
+
+.login-box-footer {
+    position:absolute;
+    bottom:0;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+
+    button {
+        font-size: 12px;
+        color: #9b9b9b;
+    }
+}
