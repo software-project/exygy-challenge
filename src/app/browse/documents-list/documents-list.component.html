@@ -1,0 +1,5 @@
+<div class="browse-stage">
+  <div class="browse-slat-set">
+    <app-document-details *ngFor="let document of documents" [document]="document" class="slat row align-middle collapse excel {{document.document_type}}"></app-document-details>
+  </div>
+</div>

@@ -5,8 +5,8 @@
         <use xlink:href="#i-search" />
       </svg>
     </span>
-    <input type="text" id="textInput" class="search-box " placeholder=""/>
-    <span class="ui-icon i-medium-gray i-base search-box-close-icon">
+    <input type="text" id="textInput" class="search-box " placeholder="" #searchBar/>
+    <span class="ui-icon i-medium-gray i-base search-box-close-icon" (click)="clearSearch()">
       <svg>
         <use xlink:href="#i-close-large" />
       </svg>
